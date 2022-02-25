@@ -1,0 +1,32 @@
+/* 노멀라이징 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul , li {
+    list-style: none;
+}
+a{
+    color: inherit ;
+    text-decoration: none;
+}
+/* 라이브러리 */
+.cell{
+    float: left;
+}
+.row::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.con{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 스타일 */
+.side_bar_box{
+    width: 20%;
+}
+.content_box{
+    width: 80%;
+}

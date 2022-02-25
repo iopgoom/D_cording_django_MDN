@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+home
+{% endblock title %}
+
+{% block content %}
+<h1>Wellcome home</h1>
+
+<p>let's make something by Django Python!!!</p>
+<br>
+<h2>변하는 컨텐츠들</h2>
+<ul>
+    <li>your book number :{{num_books}}</li>
+    <li>your instances number : {{num_instances}}</li>
+    <li>your instances_available number : {{num_instances_available}}</li>
+    <li>your authors number : {{num_authors}}</li>
+</ul>
+
+{% endblock content %}
