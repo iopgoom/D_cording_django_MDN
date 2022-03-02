@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+author list
+{% endblock title %}
+
+{% block content %}
+
+    <h1>author list</h1>
+    <ul>
+
+    {% for author in author_list %}
+    <li>
+        
+        <a href="{{ author.get_absolute_url }}">{{ author }} details</a>
+        
+    </li>
+    {% endfor %}
+
+    </ul>
+
+{% endblock %}
